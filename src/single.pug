@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="./styles/main.css")
+    title Single-page
+  body
+    include components/loader.pug
+    .container.single
+      header.single__head 
+        a(href="./index.html").header__logo
+          img(src="./images/logo.webp" alt="logo" width="226" height='44')
+        p.nav__results Showing <span>1</span>  Result(s)
+        h3.single__bookname Python
+      section.single__body 
+        img(src="./images/" alt="").single__img
+        p.single__bod 
+        .single__about 
+          p.single__author 
+          p.single__pub 
+          p.single__category
+    script(src="./scripts/single.js") 
